@@ -154,9 +154,9 @@ Constitutional articles explained in plain Hindi:
 
 ### Option 1 — Open Directly (Fastest)
 ```bash
-# Just download the HTML file and open it in any browser
+# Just open it in any browser
 # No installation, no server, no build step needed
-open nyaysetu.html
+open remarkable-raindrop-5548e2.netlify.app
 ```
 
 ### Option 2 — Clone the Repository
