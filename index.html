@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>न्याय सेवा - Hindi Legal Help Portal</title>
+<title>न्याय सेतु - Hindi Legal Help Portal</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -904,7 +904,7 @@
     <a href="#" class="logo">
       <div class="logo-icon">⚖️</div>
       <div class="logo-text">
-        <div class="main">न्याय सेवा</div>
+        <div class="main">न्याय सेतु</div>
         <div class="sub">Legal Help Portal</div>
       </div>
     </a>
@@ -1219,7 +1219,7 @@
       <div class="logo">
         <div class="logo-icon">⚖️</div>
         <div class="logo-text">
-          <div class="main">न्याय सेवा</div>
+          <div class="main">न्याय सेतु</div>
           <div class="sub">Legal Help Portal</div>
         </div>
       </div>
@@ -1241,12 +1241,11 @@
       <a href="#complaint">शिकायत दर्ज करें</a>
     </div>
     <div class="footer-col">
-      
       <a href="#">📍आपकी कानूनी मदद के लिए महक अग्निहोत्री द्वारा बनाई गई वेबसाइट </a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2024 न्याय सेवा — Legal Help Portal. सर्वाधिकार सुरक्षित।</span>
+    <span>© 2024 न्याय सेतु — Legal Help Portal. सर्वाधिकार सुरक्षित।</span>
     <span>यह एक सूचनात्मक पोर्टल है। किसी भी कानूनी कार्यवाही के लिए अधिवक्ता से परामर्श लें।</span>
   </div>
 </footer>
@@ -1264,7 +1263,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ---- MODAL DATA ----
 const modals = {
   family: {
@@ -1417,7 +1416,6 @@ async function sendMessage() {
   const sendBtn = document.getElementById('sendBtn');
   sendBtn.disabled = true;
 
-  // Show typing
   const typing = document.createElement('div');
   typing.className = 'msg bot';
   typing.innerHTML = `<div class="msg-avatar">🤖</div><div class="typing-indicator active"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
@@ -1459,7 +1457,6 @@ function handleKey(e) {
   }
 }
 
-// Auto-resize textarea
 document.getElementById('chatInput').addEventListener('input', function() {
   this.style.height = 'auto';
   this.style.height = Math.min(this.scrollHeight, 120) + 'px';
@@ -1487,7 +1484,6 @@ function submitForm() {
   document.getElementById('ticketNum').textContent = ticket;
   document.getElementById('successMsg').style.display = 'block';
 
-  // Clear form
   ['f-name','f-phone','f-email','f-detail'].forEach(id => document.getElementById(id).value = '');
   document.getElementById('f-state').value = '';
   document.getElementById('f-type').value = '';
@@ -1497,7 +1493,6 @@ function submitForm() {
 
 // ---- OFFENCE FINDER ----
 const offences = [
-  // CRIMINAL
   { emoji:'🔪', hi:'हत्या', en:'Murder', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'IPC धारा 302 / BNS धारा 101', desc:'जानबूझकर किसी की जान लेना। यह सबसे गंभीर अपराध है। Non-bailable, cognizable।', punishment:'फाँसी या आजीवन कारावास + जुर्माना' },
   { emoji:'🤜', hi:'मारपीट / हमला', en:'Assault & Battery', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'IPC धारा 323, 324, 325 / BNS 115-118', desc:'किसी को चोट पहुंचाना — साधारण या गंभीर। Bailable (323) या Non-bailable (325)।', punishment:'1 से 7 साल कारावास, गंभीरता पर निर्भर' },
   { emoji:'💰', hi:'चोरी', en:'Theft', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'IPC धारा 378-382 / BNS 303-307', desc:'किसी की संपत्ति बिना अनुमति लेना। Cognizable और Non-bailable।', punishment:'3 वर्ष तक कारावास + जुर्माना' },
@@ -1514,31 +1509,26 @@ const offences = [
   { emoji:'🗡️', hi:'हत्या का प्रयास', en:'Attempt to Murder', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'IPC धारा 307 / BNS 109', desc:'जानबूझकर जान लेने की कोशिश करना — Non-bailable, cognizable।', punishment:'10 साल से आजीवन कारावास' },
   { emoji:'👶', hi:'बाल शोषण / POCSO', en:'Child Abuse', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस (POCSO)', sections:'POCSO Act 2012 / IPC 354', desc:'18 वर्ष से कम के बच्चे पर यौन अपराध — विशेष POCSO कोर्ट।', punishment:'3 साल से आजीवन / फाँसी' },
   { emoji:'🚗', hi:'वाहन चोरी', en:'Vehicle Theft', cat:'criminal', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'IPC धारा 379 / Motor Vehicles Act', desc:'किसी का वाहन चुराना — FIR + बीमा क्लेम दोनों होते हैं।', punishment:'3 साल तक कारावास + FIR' },
-  // CYBER
   { emoji:'💻', hi:'ऑनलाइन धोखाधड़ी / UPI फ्रॉड', en:'Online Fraud', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 66D / IPC 420 / BNS 318', desc:'OTP ठगी, फेक वेबसाइट, UPI फ्रॉड — cybercrime.gov.in या 1930 पर रिपोर्ट।', punishment:'3 साल + ₹1 लाख जुर्माना' },
   { emoji:'📸', hi:'निजी फोटो वायरल / MMS', en:'Morphing / MMS', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 66E, 67, 67A / IPC 509', desc:'बिना अनुमति अंतरंग तस्वीरें साझा करना — Non-bailable।', punishment:'3 से 5 साल + जुर्माना' },
   { emoji:'💬', hi:'साइबर बुलिंग / ट्रोलिंग', en:'Cyberbullying', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 66A / IPC 507 / BNS', desc:'ऑनलाइन धमकी, परेशान करना, घृणास्पद संदेश भेजना।', punishment:'3 साल + जुर्माना' },
   { emoji:'🔓', hi:'हैकिंग', en:'Hacking', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 43, 66 / IPC 378', desc:'बिना अनुमति किसी के कंप्यूटर / अकाउंट में घुसना।', punishment:'3 साल + ₹5 लाख जुर्माना' },
   { emoji:'📧', hi:'फिशिंग / स्पैम', en:'Phishing', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 66C, 66D', desc:'नकली ईमेल/SMS से पासवर्ड या बैंक जानकारी चुराना।', punishment:'3 साल + जुर्माना' },
   { emoji:'🤳', hi:'फेक सोशल मीडिया प्रोफाइल', en:'Fake Profile / Impersonation', cat:'cyber', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक (साइबर)', sections:'IT Act धारा 66C / IPC 419', desc:'किसी की पहचान चुराकर नकली प्रोफाइल बनाना।', punishment:'3 साल + जुर्माना' },
-  // CONSUMER
   { emoji:'🛒', hi:'खराब उत्पाद / सेवा', en:'Defective Product', cat:'consumer', badge:'badge-consumer', badgeLabel:'🟢 उपभोक्ता केस', sections:'Consumer Protection Act 2019 / धारा 35', desc:'खराब या मानक से कम उत्पाद बेचना। उपभोक्ता फोरम में शिकायत करें।', punishment:'हर्जाना + मुआवजा + सेवा सुधार' },
   { emoji:'🏗️', hi:'बिल्डर धोखाधड़ी', en:'Builder Fraud', cat:'consumer', badge:'badge-both', badgeLabel:'🟡 उपभोक्ता + आपराधिक', sections:'RERA Act / Consumer Protection Act / IPC 420', desc:'फ्लैट देर से देना, गुणवत्ता खराब, वादाखिलाफी — RERA में शिकायत।', punishment:'हर्जाना + ब्याज + जेल (गंभीर)' },
   { emoji:'🏦', hi:'बीमा दावा अस्वीकृत', en:'Insurance Rejection', cat:'consumer', badge:'badge-consumer', badgeLabel:'🟢 उपभोक्ता केस', sections:'Insurance Act / Consumer Protection Act / IRDAI', desc:'उचित कारण के बिना बीमा क्लेम रद्द करना।', punishment:'हर्जाना + ब्याज सहित क्लेम' },
   { emoji:'📱', hi:'ई-कॉमर्स धोखा', en:'E-Commerce Fraud', cat:'consumer', badge:'badge-both', badgeLabel:'🟡 उपभोक्ता + साइबर', sections:'Consumer Protection (E-Commerce) Rules 2020 / IT Act', desc:'नकली सामान, डिलीवरी न होना, रिफंड न देना।', punishment:'हर्जाना + जुर्माना' },
   { emoji:'🔌', hi:'बिजली / पानी विभाग लापरवाही', en:'Utility Negligence', cat:'consumer', badge:'badge-consumer', badgeLabel:'🟢 उपभोक्ता केस', sections:'Consumer Protection Act / Electricity Act 2003', desc:'गलत बिल, बार-बार कटौती, कनेक्शन न देना — राज्य नियामक आयोग में।', punishment:'हर्जाना + सेवा सुधार' },
-  // FAMILY
   { emoji:'💔', hi:'तलाक', en:'Divorce', cat:'family', badge:'badge-civil', badgeLabel:'🔵 पारिवारिक केस', sections:'Hindu Marriage Act 1955 / Muslim Personal Law / Special Marriage Act', desc:'विवाह विच्छेद के लिए पारिवारिक न्यायालय में याचिका। आपसी सहमति सबसे सरल।', punishment:'Matrimonial Petition — अदालत निर्णय देती है' },
   { emoji:'👊', hi:'घरेलू हिंसा', en:'Domestic Violence', cat:'family', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक + संरक्षण', sections:'DV Act 2005 / IPC 498A / BNS 85', desc:'पत्नी या परिवार के सदस्य पर शारीरिक-मानसिक हिंसा। Protection Order लें।', punishment:'3 साल + हर्जाना + निष्कासन आदेश' },
   { emoji:'👶', hi:'बाल संरक्षण / कस्टडी', en:'Child Custody', cat:'family', badge:'badge-civil', badgeLabel:'🔵 दीवानी केस', sections:'Hindu Minority & Guardianship Act / Guardians & Wards Act', desc:'तलाक के बाद बच्चे की देखभाल — बच्चे के हित के आधार पर अदालत तय करती है।', punishment:'Guardian Petition केस' },
   { emoji:'💵', hi:'गुजारा भत्ता न देना', en:'Non-payment of Alimony', cat:'family', badge:'badge-civil', badgeLabel:'🔵 दीवानी + आपराधिक', sections:'CrPC धारा 125 / Hindu Marriage Act 24, 25', desc:'पत्नी / बच्चे / माता-पिता को गुजारा भत्ता न देना — Contempt of Court।', punishment:'अवमानना: जेल तक संभव' },
   { emoji:'👴', hi:'बुजुर्गों की उपेक्षा', en:'Senior Neglect', cat:'family', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'Maintenance & Welfare of Parents Act 2007', desc:'माता-पिता / बुजुर्गों को न रखना, देखभाल न करना।', punishment:'₹10,000 जुर्माना / 3 माह जेल' },
-  // PROPERTY
   { emoji:'🏠', hi:'जमीन कब्जा / अतिक्रमण', en:'Land Encroachment', cat:'property', badge:'badge-civil', badgeLabel:'🔵 दीवानी + राजस्व', sections:'CPC Order 39 / Revenue Code / IPC 441', desc:'किसी की जमीन पर जबरन कब्जा — तहसीलदार या सिविल कोर्ट में शिकायत।', punishment:'बेदखली + हर्जाना + आपराधिक मामला' },
   { emoji:'📜', hi:'वसीयत विवाद', en:'Will Dispute', cat:'property', badge:'badge-civil', badgeLabel:'🔵 दीवानी केस', sections:'Indian Succession Act 1925 / Hindu Succession Act', desc:'फर्जी वसीयत या उचित हिस्सा न मिलना — Probate Court में।', punishment:'Testamentary Suit केस' },
   { emoji:'🏚️', hi:'किराया विवाद / बेदखली', en:'Rent Dispute', cat:'property', badge:'badge-civil', badgeLabel:'🔵 दीवानी केस', sections:'Rent Control Act / Transfer of Property Act', desc:'मकान मालिक या किरायेदार का विवाद — किराया नियंत्रण न्यायालय में।', punishment:'हर्जाना + बेदखली / मुआवजा' },
   { emoji:'📋', hi:'संपत्ति पंजीकरण धोखा', en:'Property Fraud', cat:'property', badge:'badge-both', badgeLabel:'🟡 दीवानी + आपराधिक', sections:'Registration Act 1908 / IPC 420, 467', desc:'नकली रजिस्ट्री या बिना अनुमति बेची संपत्ति।', punishment:'7 साल + हर्जाना' },
-  // LABOUR
   { emoji:'💼', hi:'अनुचित बर्खास्तगी', en:'Wrongful Termination', cat:'labour', badge:'badge-civil', badgeLabel:'🔵 श्रम केस', sections:'Industrial Disputes Act 1947 / धारा 25', desc:'नोटिस या कारण बताए बिना नौकरी से निकालना — Labour Court में।', punishment:'बहाली + बकाया वेतन' },
   { emoji:'💸', hi:'वेतन न देना', en:'Wage Theft', cat:'labour', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक + श्रम', sections:'Payment of Wages Act / Minimum Wages Act', desc:'तय वेतन न देना या काटना — श्रम विभाग में FIR।', punishment:'जुर्माना + बकाया + सज़ा' },
   { emoji:'🏭', hi:'कार्यस्थल उत्पीड़न', en:'Workplace Harassment', cat:'labour', badge:'badge-criminal', badgeLabel:'⚖️ आपराधिक केस', sections:'POSH Act 2013 / IPC 354A / BNS 75', desc:'कार्यस्थल पर यौन या मानसिक उत्पीड़न — ICC या श्रम न्यायालय।', punishment:'3 साल + नौकरी जाना' },
