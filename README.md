@@ -172,10 +172,9 @@ open index.html
 3. Set source to `main` branch, `/ (root)` folder
 4. Your site will be live at `https://your-username.github.io/nyaysetu`
 
-### Option 4 — Netlify / Vercel Drop
-1. Go to [netlify.com/drop](https://app.netlify.com/drop) or [vercel.com](https://vercel.com)
-2. Drag and drop the `nyaysetu.html` file
-3. Live in 30 seconds — free
+### Option 4 —  Vercel Drop
+1. Go to https://nyay-setu-nine.vercel.app/
+2
 
 
 ---
